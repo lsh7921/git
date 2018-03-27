@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>css 단위</title>
+    <style>
+      body {font-size:5px;}
+      div.em {font-size:2em;} //calulated 5px * 2 = 10px
+      div.rem1 {font-size:1rem;}
+    </style>
+  </head>
+  <body>
+    <div class="em">
+      현재의 폰트사이즈 em 10px <span style="font-size:10px">10px</span>
+      <div class="em">
+        emtest 20px <span style="font-size:20px">20px</span>
+        <div class="em">
+          emtest 40px <span style="font-size:40px">40px</span>
+        </div>
+      </div>
+       <div class="rem1">remtest <span style="font-size:5px">5px</span></div>
+       <div class="rem1">remtest <span style="font-size:5px">5px</span></div>
+    </div>
+    <div class="rem1">remtest <span style="font-size:5px">5px</span>
+      <div class="rem1">remtest <span style="font-size:5px">5px</span>
+      </div>
+    </div>
+  </body>
+</html>
